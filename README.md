@@ -11,7 +11,9 @@ Add the [API jar](https://github.com/HexyeDEV/EliteBazaarAPI/releases/latest) to
 
 Compile against it:
 ```
-compileOnly files("libs/EliteBazaarAPI.jar")
+dependencies {
+    compileOnly files("libs/EliteBazaarAPI.jar")
+}
 ```
 
 # Listening to events
