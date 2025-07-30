@@ -7,6 +7,12 @@ if (!Bukkit.getPluginManager().isPluginEnabled("EliteBazaar")) {
     return;
 }
 ```
+Add the [API jar](https://github.com/HexyeDEV/EliteBazaarAPI/releases/latest) to your project (E.g. in the libs folder)
+
+Compile against it:
+```
+compileOnly files("libs/EliteBazaarAPI.jar")
+```
 
 # Listening to events
 ```java
