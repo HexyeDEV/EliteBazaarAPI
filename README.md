@@ -1,3 +1,6 @@
+# EliteBazaarAPI
+This is an API that allows other plugins to interact with [EliteBazaar](https://builtbybit.com/resources/elitebazaar-supply-and-demand-market.57715)
+
 # Initialization
 Disable the plugin if EliteBazaar is not found:
 ```java
