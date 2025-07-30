@@ -1,0 +1,46 @@
+package me.hexye.elitebazaarapi.events;
+
+import org.bukkit.OfflinePlayer;
+import org.bukkit.inventory.ItemStack;
+
+public class SellOrderFilled {
+    private final String item_name;
+    private final ItemStack item;
+    private final int amount;
+    private final double price;
+    private final OfflinePlayer player;
+    private final double total;
+
+    public SellOrderFilled(String item_name, ItemStack item, int amount, double price, OfflinePlayer player) {
+        this.item_name = item_name;
+        this.item = item;
+        this.amount = amount;
+        this.price = price;
+        this.player = player;
+        this.total = amount * price;
+    }
+
+    public String getItemName() {
+        return item_name;
+    }
+
+    public ItemStack getItem() {
+        return item;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public OfflinePlayer getPlayer() {
+        return player;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+}
